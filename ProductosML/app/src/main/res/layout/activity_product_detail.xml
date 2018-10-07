@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productdetail.ProductDetailActivity">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/marginBottomDetail"
+    />
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productImage"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/marginLeftDetail"
+        android:layout_marginRight="@dimen/marginRightDetail"
+        android:layout_marginBottom="@dimen/marginBottomDetail">
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/conditionSeparator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - " />
+        <TextView
+            android:id="@+id/soldQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/soldLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soldLabel"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstRow"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/marginLeftDetail"
+        android:layout_marginRight="@dimen/marginRightDetail"
+        android:layout_marginBottom="@dimen/marginBottomDetail">
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/textFontSize"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondRow"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeftDetail"
+            android:layout_marginRight="@dimen/marginRightDetail"
+            android:layout_marginBottom="@dimen/marginBottomDetail"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourthRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thirdRow"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/marginLeftDetail"
+        android:layout_marginRight="@dimen/marginRightDetail">
+        <TextView
+            android:id="@+id/availableQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/availableLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/availableLabel"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <dimen name="marginLeftDetail">16dp</dimen>
+   <dimen name="marginRightDetail">16dp</dimen>
+   <dimen name="marginBottomDetail">16dp</dimen>
+   <dimen name="marginTopDetail">16dp</dimen>
+   <dimen name="textFontSize">20dp</dimen>
+</resources>

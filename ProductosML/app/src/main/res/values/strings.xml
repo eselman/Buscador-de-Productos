@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProductosML</string>
+    <string name="searchProductsLabel">Buscador de Productos</string>
+    <string name="search">Buscar</string>
+    <string name="soldLabel">\u0020 Vendidos</string>
+    <string name="availableLabel">\u0020 Disponible(s)</string>
+</resources>
